@@ -1,0 +1,1 @@
+/** NEW MEMBERS WIDGET **/
