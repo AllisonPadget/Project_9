@@ -10,15 +10,25 @@ var dailyTraffic = new Chart(dailyTraffic, {
             label: '',
             data: [75, 100, 175, 75, 225, 200, 100],
             backgroundColor: [
-                '#E2E3F6'
+                '#8f92cb',
+                '#7377BF',
+                '#7377BF',
+                '#7377BF',
+                '#7377BF',
+                '#7377BF',
+                '#8f92cb'
             ],
-            borderColor: [
-                '#7377BF'
-            ],
-            borderWidth: 1
+            hoverBackgroundColor: [
+                '#a5a7d5',
+                '#a5a7d5',
+                '#a5a7d5',
+                '#a5a7d5',
+                '#a5a7d5',
+                '#a5a7d5',
+                '#a5a7d5'
+            ]
         }]
     },
     options: {
-
     }
 });
