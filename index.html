@@ -6,49 +6,60 @@
     <title>Allison Padget | Web App Dashboard</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
 
   </head>
   <body>
-    <header>
+    <header class="flex-header">
       <div class="header">
-        <h1>Web App</h1>
+        <p>YourApp&#8482;</p>
       </div>
       <div class="bell">
         <img src="icons/icon-bell.svg" alt="notification bell">
       </div>
       <div class="profile">
         <img src="icons/profile-img.jpg" alt="profile-picture" class="img-profile">
-        <h3 class="name">Allison Padget<h3>
       </div>
+      <div class="name">
+        <p>Allison Padget<p>
+      <div>
     </header>
     
-    <div class="navigation">
-      <img src="icons/icon-dashboard.svg" class="dashboard">
-      <img src="icons/icon-members.svg" class="members">
-      <img src="icons/icon-visits.svg" class="visits">
-      <img src="icons/icon-settings.svg" class="settings-icon">
-    </div>
+    <ul class="navigation">
+      <li><img src="icons/icon-dashboard.svg" class="dashboard"></li>
+      <li> <img src="icons/icon-members.svg" class="members"></li>
+      <li><img src="icons/icon-visits.svg" class="visits"></li>
+      <li><img src="icons/icon-settings.svg" class="settings-icon"></li>
+    </ul>
 
     <main>
+      <div>Dashboard</div>
+
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Alert</strong>
+      </div>
+
       <div class="wrapper">
-        <div class="traffic"></div>
-        <div class="daily_traffic"></div>
-        <div class="mobile_users"></div>
-        <div class="social_stats">
+        <div class="web-traffic">TRAFFIC
+          <canvas id="web-traffic" width="1400" height="300"></canvas>
+        </div>
+        <div class="daily-traffic">DAILY TRAFFIC
+          <canvas id="daily-traffic" width="500" height="500"></canvas>
+        </div>
+        <div class="mobile-users">MOBILE USERS</div>
+        <div class="social-stats"> SOCIAL STATS
           <img src="icons/icon-twitter.svg" class="twitter">Twitter
           <img src="icons/icon-facebook.svg" class="facebook">Facebook
           <img src="icons/icon-google-plus.svg" class="google">Google+
         </div>
-        <div class="new_members"></div>
-        <div class="recent_activity"></div>
-        <div class="new_members"></div>
-        <div class="message_user">
+        <div class="new-members">NEW MEMBERS</div>
+        <div class="recent-activity">RECENT ACTIVITY</div>
+        <div class="message-user">MESSAGE USER
           <button>Send</button>
         </div>
-        <div class="settings">
+        <div class="settings">SETTINGS
           <button>Save</button>
           <button>Cancel</button>
         </div>
@@ -62,8 +73,17 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/dailytraffic.js"></script>
+    <script src="js/messageuser.js"></script>
+    <script src="js/mobileuser.js"></script>
+    <script src="js/newmembers.js"></script>
+    <script src="js/recentactivity.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/socialstats.js"></script>
+    <script src="js/webtraffic.js"></script>
     <script src="js/app.js"></script>
 
   </body>
