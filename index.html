@@ -6,7 +6,7 @@
     <title>Allison Padget | Web App Dashboard</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100, 300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
     
@@ -131,36 +131,42 @@
 
         <div class="message-user">
           <p>MESSAGE USER</p>
-          <textarea placeholder="Seach for User"></textarea><br>
-          <textarea placeholder="Message for User"></textarea><br>
-          <button>Send</button>
+          <textarea class="search-user" placeholder="Search for User"></textarea><br>
+          <textarea class="message" placeholder="Message for User"></textarea><br>
+          <button class="send-btn">Send</button>
         </div>
 
         <div class="settings">
           <p>SETTINGS</p>
           <div>
             <p>Send Email Notifications</p>
-            <label class="switch">
-              <input type="checkbox">
-              <div class="slider"></div>
-            </label>
+            <div class="toggle">
+              <input type="checkbox" name="toggle" class="toggle-checkbox" id="mytoggle" checked>
+              <label class="toggle-label" for="mytoggle">
+                <span class="toggle-inner"></span>
+                <span class="toggle-switch"></span>
+              </label>
+            </div>
           </div>
           <div>
           <p>Set Profile to Public</p>
-          <label class="switch">
-              <input type="checkbox">
-              <div class="slider"></div>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
             </label>
+          </div>
           </div>
           <div>
             <p>Select Timezone:</p>
-            <select name="timezone">
+            <select class="timezone" name="timezone">
               <option value="CST">CST</option>
               <option value="EST">EST</option>
               <option value="PST">PST</option>
             </select><br>
           </div>
-          <button>Save</button>
+          <button class="save-btn">Save</button>
           <button>Cancel</button>
         </div>
       </div>
