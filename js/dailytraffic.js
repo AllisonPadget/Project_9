@@ -30,5 +30,7 @@ var dailyTraffic = new Chart(dailyTraffic, {
         }]
     },
     options: {
+        legend: false //hide legend
+
     }
 });

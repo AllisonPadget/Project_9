@@ -93,44 +93,141 @@ li {
 
 .web-traffic {
 	display: block;
-	width: 1400px;
-	height: 400px;
+	/*width: 1400px;*/
+	/*height: 400px;*/
 	padding: 10px;
+	margin: 0;
 }
 
 .daily-traffic {
 	display: inline-block;
-	width: 600px;
-	height: 400px;
-	padding: 20px;
+	/*width: 600px;*/
+	/*height: 400px;*/
+	padding: 10px;
 }
 
 .mobile-users {
 	display: inline-block;
-	width: 600px;
-	height: 400px;
-	padding: 20px;
+	/*width: 600px;*/
+	/*height: 400px;*/
+	padding: 10px;
 }
 
 
 
 /** SOCIAL STATS **/
 
+.social-stats {
+	padding: 10px;
+}
+
+
 .img-twitter, .img-facebook, .img-google {
-	height: 30px;
-	width: 30px;
+	height: 50px;
+	width: 50px;
 }
 
 .twitter, .facebook, .google {
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
-
-	width: 400px;
+	margin: 0px 45px 30px 45px;
+	width: 25%;
 
 }
 
 
+/** NEW MEMBERS **/
 
+.new-members {
+	display: inline-block;
+	width: 49%;
+
+}
+
+.harry-img, .mary-img, .lloyd-img, .joe-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+
+/** RECENT ACTIVITY **/
+
+.recent-activity {
+	display: inline-block;
+	width: 49%;
+}
+
+/** MESSAGE USER **/
+
+.message-user {
+	display: inline-block;
+	width: 49%;
+}
+
+/** SETTINGS **/
+
+.settings {
+	display: inline-block;
+	width: 49%;
+}
+
+/** TOGGLE **/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+/*.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}*/
 
 

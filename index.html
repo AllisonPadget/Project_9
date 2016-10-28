@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
+    
 
   </head>
   <body>
@@ -42,18 +43,23 @@
       </div>
 
       <div class="wrapper">
-        <div class="web-traffic">TRAFFIC
+        <div class="web-traffic">
+          <p>TRAFFIC</p>
           <canvas id="web-traffic" width="1400" height="300"></canvas>
         </div>
-        <div class="daily-traffic">DAILY TRAFFIC
+
+        <div class="daily-traffic">
+          <p>DAILY TRAFFIC</p>
           <canvas id="daily-traffic" width="600" height="400"></canvas>
         </div>
-        <div class="mobile-users">MOBILE USERS
+
+        <div class="mobile-users">
+          <p>MOBILE USERS</p>
           <canvas id="mobile-users" width="600" height="400"></canvas>
         </div>
 
-        <div class="social-stats"> SOCIAL STATS
-
+        <div class="social-stats">
+          <p>SOCIAL STATS</p>
           <div class="twitter">
             <img src="icons/icon-twitter.svg" class="img-twitter">
             <p>Twitter</p>
@@ -71,12 +77,89 @@
           </div>
         </div>
 
-        <div class="new-members">NEW MEMBERS</div>
-        <div class="recent-activity">RECENT ACTIVITY</div>
-        <div class="message-user">MESSAGE USER
+        <div class="new-members">
+          <p>NEW MEMBERS</p>
+            <div class="mary">
+              <img class="mary-img" src="icons/mary.png">
+              <p>Mary Swanson</p>
+              <p>mary.swanson@example.com</p>
+              <p>10/15/15</p>
+            </div>
+            <div class="lloyd">
+              <img class="lloyd-img" src="icons/lloyd.jpg">
+              <p>Lloyd Christmas</p>
+              <p>lloyd.christmas@example.com</p>
+              <p>10/15/15</p>
+            </div>
+            <div class="harry">
+              <img class="harry-img" src="icons/harry.jpg">
+              <p>Harry Dunne</p>
+              <p>harry.dunne@example.com</p>
+              <p>10/15/15</p>
+            </div>
+            <div class="joe">
+              <img class="joe-img" src="icons/joe.jpeg">
+              <p>Joe Mentalino</p>
+              <p>joe.mentalino@example.com</p>
+              <p>10/15/15</p>
+            </div>
+        </div>
+
+        <div class="recent-activity">
+          <p>RECENT ACTIVITY</p>
+            <div class="mary">
+              <img class="mary-img" src="icons/mary.png">
+              <p>Mary Swanson commented on YourApp's SEO Tips</p>
+              <p>4 hours ago</p>
+            </div>
+            <div class="lloyd">
+              <img class="lloyd-img" src="icons/lloyd.jpg">
+              <p>Lloyd Christmas liked the post Facebook's Changes for 2016</p>
+              <p>5 hours ago</p>
+            </div>
+            <div class="harry">
+              <img class="harry-img" src="icons/harry.jpg">
+              <p>Harry Dunne commented on the post Facebook's Changes for 2016</p>
+              <p> 5 hours ago</p>
+            </div>
+            <div class="joe">
+              <img class="joe-img" src="icons/joe.jpeg">
+              <p>Joe Mentalino posted YourApp's SEO Tips</p>
+              <p>1 day ago</p>
+            </div>
+        </div>
+
+        <div class="message-user">
+          <p>MESSAGE USER</p>
+          <textarea placeholder="Seach for User"></textarea><br>
+          <textarea placeholder="Message for User"></textarea><br>
           <button>Send</button>
         </div>
-        <div class="settings">SETTINGS
+
+        <div class="settings">
+          <p>SETTINGS</p>
+          <div>
+            <p>Send Email Notifications</p>
+            <label class="switch">
+              <input type="checkbox">
+              <div class="slider"></div>
+            </label>
+          </div>
+          <div>
+          <p>Set Profile to Public</p>
+          <label class="switch">
+              <input type="checkbox">
+              <div class="slider"></div>
+            </label>
+          </div>
+          <div>
+            <p>Select Timezone:</p>
+            <select name="timezone">
+              <option value="CST">CST</option>
+              <option value="EST">EST</option>
+              <option value="PST">PST</option>
+            </select><br>
+          </div>
           <button>Save</button>
           <button>Cancel</button>
         </div>

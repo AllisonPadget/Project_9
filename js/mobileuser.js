@@ -23,6 +23,14 @@ var mobileUser = new Chart(mobileUser, {
         }]
     },
     options: {
-    	cutoutPercentage: 35
+        legend: {
+            position: 'right',
+            labels: {
+                boxWidth: 15,
+                padding: 25,
+                fontSize: 16
+            }
+        },
+        cutoutPercentage: 35	
     }
 });

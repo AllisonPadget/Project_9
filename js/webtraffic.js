@@ -21,8 +21,12 @@ var webTraffic = new Chart(webTraffic, {
             ],
             borderWidth: 1,
             lineTension: 0
+
         }]
     },
     options: {
+        legend: { 
+            display:false //hide legend
+        }
     }
 });
