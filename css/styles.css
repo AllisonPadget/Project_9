@@ -1,10 +1,23 @@
-/** BORDER **/
-.traffic, .daily-traffic, .mobile-users, .social-stats, .new-members, .recent-activity, .message-user, .settings {
+/** BORDER **/ 
+.traffic, .daily-traffic, .mobile-users, .social-stats, 
+.new-members, .recent-activity, .message-user, .settings {     
 	border-style: solid;
-	border-width: 1px;	
+	border-width: 1px;   
 }
 
 
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	height: 100%;
+}
+
+main {
+	padding-left: 50px;
+}
 
 /** HEADER **/
 
@@ -39,7 +52,8 @@ header {
 
 /** LEFT SIDE NAVIGATION **/
 
-.navigation {
+
+.nav-bar {
 	background: #4D4C72;
 	display: flex;
 	flex-direction: column;
@@ -47,6 +61,12 @@ header {
 	list-style: none;
 	width: 50px;
 	margin: 0;
+
+	position: absolute;
+	top: 50px;
+	left: 0;
+	height: 100%;
+
 }
 
 ul {
@@ -54,6 +74,7 @@ ul {
 }
 li {
 	padding: 5px;
+	padding-top: 50px;
 }
 
 .dashboard, .members, .visits, .settings-icon {
@@ -93,23 +114,18 @@ li {
 
 .web-traffic {
 	display: block;
-	/*width: 1400px;*/
-	/*height: 400px;*/
 	padding: 10px;
 	margin: 0;
 }
 
 .daily-traffic {
 	display: inline-block;
-	/*width: 600px;*/
-	/*height: 400px;*/
+
 	padding: 10px;
 }
 
 .mobile-users {
 	display: inline-block;
-	/*width: 600px;*/
-	/*height: 400px;*/
 	padding: 10px;
 }
 
@@ -130,9 +146,10 @@ li {
 .twitter, .facebook, .google {
 	border-style: solid;
 	border-width: 1px;
+
 	display: inline-block;
-	margin: 0px 45px 30px 45px;
-	width: 25%;
+	/*margin: 0px 45px 30px 45px;*/
+	width: 85%;
 
 }
 
@@ -141,7 +158,6 @@ li {
 
 .new-members {
 	display: inline-block;
-	width: 49%;
 
 }
 
@@ -156,27 +172,26 @@ li {
 
 .recent-activity {
 	display: inline-block;
-	width: 49%;
 }
 
 /** MESSAGE USER **/
 
 .message-user {
 	display: inline-block;
-	width: 49%;
+	width: 100%;
 }
 
 .send-btn {
 	background-color: #7379BD;
-	width: 400px;
+	width: 90%;
 }
 
 .search-user {
-	width: 400px;
+	width: 90%;
 }
 
 .message {
-	width: 400px;
+	width: 90%;
 	height: 150px;
 }
 
@@ -195,11 +210,11 @@ textarea:hover {
 
 .settings {
 	display: inline-block;
-	width: 49%;
+	width: 100%;
 }
 
 .timezone {
-	width: 400px;
+	width: 300px;
 }
 
 select:focus {
@@ -208,12 +223,14 @@ select:focus {
 	box-shadow: 0 0 10px #7379BD;
 }
 
-
-
 .save-btn {
 	background-color: #7379BD;
+	width: 150px;
 }
 
+.cancel-btn {
+	width: 150px;
+}
 
 
 /** TOGGLE ONE **/

@@ -28,12 +28,14 @@
       <div>
     </header>
     
-    <ul class="navigation">
-      <li><img src="icons/icon-dashboard.svg" class="dashboard"></li>
-      <li> <img src="icons/icon-members.svg" class="members"></li>
-      <li><img src="icons/icon-visits.svg" class="visits"></li>
-      <li><img src="icons/icon-settings.svg" class="settings-icon"></li>
-    </ul>
+    <div class="navigation">
+      <ul class="nav-bar">
+        <li><img src="icons/icon-dashboard.svg" class="dashboard"></li>
+        <li> <img src="icons/icon-members.svg" class="members"></li>
+        <li><img src="icons/icon-visits.svg" class="visits"></li>
+        <li><img src="icons/icon-settings.svg" class="settings-icon"></li>
+      </ul>
+    </div>
 
     <main>
       <div>Dashboard</div>
@@ -45,36 +47,40 @@
       <div class="wrapper">
         <div class="web-traffic">
           <p>TRAFFIC</p>
-          <canvas id="web-traffic" width="1400" height="300"></canvas>
+          <canvas id="web-traffic" width="325" height="300"></canvas>
         </div>
 
         <div class="daily-traffic">
           <p>DAILY TRAFFIC</p>
-          <canvas id="daily-traffic" width="600" height="400"></canvas>
+          <canvas id="daily-traffic" width="325" height="200"></canvas>
         </div>
 
         <div class="mobile-users">
           <p>MOBILE USERS</p>
-          <canvas id="mobile-users" width="600" height="400"></canvas>
+          <canvas id="mobile-users" width="325" height="200"></canvas>
         </div>
 
         <div class="social-stats">
           <p>SOCIAL STATS</p>
+
           <div class="twitter">
             <img src="icons/icon-twitter.svg" class="img-twitter">
-            <p>Twitter</p>
-            <p>10,345</p>
+            <div>Twitter</div>
+            <div>10,345</div>
           </div>
+
           <div class="facebook">
             <img src="icons/icon-facebook.svg" class="img-facebook">
-            <p>Facebook</p>
-            <p>8,739</p>
+            <div>Facebook</div>
+            <div>8,739</div>
           </div>
+
           <div class="google">
             <img src="icons/icon-google-plus.svg" class="img-google">
-            <p>Google+</p>
-            <p>2,530</p>
+            <div>Google+</div>
+            <div>2,530</div>
           </div>
+          
         </div>
 
         <div class="new-members">
@@ -167,7 +173,7 @@
             </select><br>
           </div>
           <button class="save-btn">Save</button>
-          <button>Cancel</button>
+          <button class="cancel-btn">Cancel</button>
         </div>
       </div>
     </main>

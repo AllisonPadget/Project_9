@@ -30,3 +30,4 @@ var webTraffic = new Chart(webTraffic, {
         }
     }
 });
+

@@ -1,0 +1,81 @@
+/**********************************
+		|  ** ** ** ** ** ** ** **
+		|         * * *
+		|    MEDIA QUERY 768px
+		|         * * *
+	 \ /  ** ** ** ** ** ** ** **
+		\/
+*************************************/
+
+@media only screen and (min-width: 768px) {
+
+	.twitter, .facebook, .google {
+		width: 32%;
+	}
+
+	.message {
+		width: 200px;
+		height: 150px;
+	}
+
+	.search-user {
+		width: 200px;
+	}
+
+	.send-btn {
+		width: 200px;
+	}
+
+}
+
+
+
+
+/**********************************
+		|  ** ** ** ** ** ** ** **
+		|         * * *
+		|    MEDIA QUERY 1024px
+		|         * * *
+	 \ /  ** ** ** ** ** ** ** **
+		\/
+*************************************/
+
+@media only screen and (min-width: 1024px) {
+	
+
+	.twitter, .facebook, .google {
+		width: 25%;
+	}
+
+
+	.new-members, .recent-activity, .message-user, .settings {
+		width: 49%;
+	}
+
+	.message {
+		width: 400px;
+		height: 150px;
+	}
+
+	.search-user {
+		width: 400px;
+	}
+
+	.send-btn {
+		width: 400px;
+	}
+
+	.timezone {
+		width: 100%;
+	}
+
+	.save-btn {
+		width: 40%;
+	}
+
+	.cancel-btn {
+		width: 40%;
+	}
+
+
+}
