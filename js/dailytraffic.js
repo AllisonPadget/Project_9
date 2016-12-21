@@ -30,7 +30,17 @@ var dailyTraffic = new Chart(dailyTraffic, {
         }]
     },
     options: {
-        legend: false //hide legend
-
+        legend: {
+            display: false
+        },
+        scales: {
+            xAxes: [{
+                barPercentage: 0.9,
+                categoryPercentage: 1.0
+            }]
+        },
+        maintainAspectRatio: false
     }
+
+    
 });

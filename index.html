@@ -14,18 +14,20 @@
   </head>
   <body>
     <header class="flex-header">
-      <div class="header">
-        <p>YourApp&#8482;</p>
+      <div class="head-wrap">
+        <div class="header">
+          <p>YourApp&#8482;</p>
+        </div>
+        <div class="bell">
+          <img src="icons/icon-bell.svg" alt="notification bell">
+        </div>
+        <div class="profile">
+          <img src="icons/profile-img.jpg" alt="profile-picture" class="img-profile">
+        </div>
+        <div class="name">
+          <p>Allison Padget</p>
+        </div>
       </div>
-      <div class="bell">
-        <img src="icons/icon-bell.svg" alt="notification bell">
-      </div>
-      <div class="profile">
-        <img src="icons/profile-img.jpg" alt="profile-picture" class="img-profile">
-      </div>
-      <div class="name">
-        <p>Allison Padget<p>
-      <div>
     </header>
     
     <div class="navigation">
@@ -40,142 +42,145 @@
     <main>
       <div>Dashboard</div>
 
-      <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Alert</strong>
-      </div>
-
-      <div class="wrapper">
-        <div class="web-traffic">
-          <p>TRAFFIC</p>
-          <canvas id="web-traffic" width="325" height="300"></canvas>
+        <div class="search-box">
+        <input type="textarea" name="search-box" placeholder="Search">
         </div>
 
-        <div class="daily-traffic">
-          <p>DAILY TRAFFIC</p>
-          <canvas id="daily-traffic" width="325" height="200"></canvas>
+        <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Alert</strong>
         </div>
 
-        <div class="mobile-users">
-          <p>MOBILE USERS</p>
-          <canvas id="mobile-users" width="325" height="200"></canvas>
-        </div>
-
-        <div class="social-stats">
-          <p>SOCIAL STATS</p>
-
-          <div class="twitter">
-            <img src="icons/icon-twitter.svg" class="img-twitter">
-            <div>Twitter</div>
-            <div>10,345</div>
+        <div class="wrapper">
+          <div class="web-traffic">
+            <p>TRAFFIC</p>
+            <canvas id="web-traffic" width="325" max-height="300"></canvas>
           </div>
 
-          <div class="facebook">
-            <img src="icons/icon-facebook.svg" class="img-facebook">
-            <div>Facebook</div>
-            <div>8,739</div>
+          <div class="daily-traffic">
+            <p>DAILY TRAFFIC</p>
+            <canvas id="daily-traffic" width="400" max-height="300"></canvas>
           </div>
 
-          <div class="google">
-            <img src="icons/icon-google-plus.svg" class="img-google">
-            <div>Google+</div>
-            <div>2,530</div>
+          <div class="mobile-users">
+            <p>MOBILE USERS</p>
+            <canvas id="mobile-users" width="400" max-height="300"></canvas>
           </div>
-          
-        </div>
 
-        <div class="new-members">
+          <div class="social-stats">
+            <p>SOCIAL STATS</p>
+
+            <div class="twitter">
+              <img src="icons/icon-twitter.svg" class="img-twitter">
+              <div>Twitter</div>
+              <div>10,345</div>
+            </div>
+
+            <div class="facebook">
+              <img src="icons/icon-facebook.svg" class="img-facebook">
+              <div>Facebook</div>
+              <div>8,739</div>
+            </div>
+
+            <div class="google">
+              <img src="icons/icon-google-plus.svg" class="img-google">
+              <div>Google+</div>
+              <div>2,530</div>
+            </div>
+            
+          </div>
+
+          <div class="new-members">
+
           <p>NEW MEMBERS</p>
-            <div class="mary">
-              <img class="mary-img" src="icons/mary.png">
-              <p>Mary Swanson</p>
-              <p>mary.swanson@example.com</p>
-              <p>10/15/15</p>
-            </div>
-            <div class="lloyd">
-              <img class="lloyd-img" src="icons/lloyd.jpg">
-              <p>Lloyd Christmas</p>
-              <p>lloyd.christmas@example.com</p>
-              <p>10/15/15</p>
-            </div>
-            <div class="harry">
-              <img class="harry-img" src="icons/harry.jpg">
-              <p>Harry Dunne</p>
-              <p>harry.dunne@example.com</p>
-              <p>10/15/15</p>
-            </div>
-            <div class="joe">
-              <img class="joe-img" src="icons/joe.jpeg">
-              <p>Joe Mentalino</p>
-              <p>joe.mentalino@example.com</p>
-              <p>10/15/15</p>
-            </div>
-        </div>
+            <table>
+              <tr class="mary1">
+                <td><img class="mary-img" src="icons/mary.png"></td>
+                <td>Mary Swanson mary.swanson@example.com</td>
+                <td>10/15/15</td>
+              </tr>
+              <tr class="lloyd1">
+                <td><img class="lloyd-img" src="icons/lloyd.jpg"></td>
+                <td>Lloyd Christmas lloyd.christmas@example.com</td>
+                <td>10/15/15</td>
+              </tr>
+              <tr class="harry1">
+                <td><img class="harry-img" src="icons/harry.jpg"></td>
+                <td>Harry Dunne harry.dunne@example.com</td>
+                <td>10/15/15</td>
+              </tr>
+              <tr class="joe1">
+                <td><img class="joe-img" src="icons/joe.jpeg"></td>
+                <td>Joe Mentalino joe.mentalino@example.com</td>
+                <td>10/15/15</td>
+              </tr>
+            </table>
+          </div>
 
-        <div class="recent-activity">
-          <p>RECENT ACTIVITY</p>
-            <div class="mary">
-              <img class="mary-img" src="icons/mary.png">
-              <p>Mary Swanson commented on YourApp's SEO Tips</p>
-              <p>4 hours ago</p>
-            </div>
-            <div class="lloyd">
-              <img class="lloyd-img" src="icons/lloyd.jpg">
-              <p>Lloyd Christmas liked the post Facebook's Changes for 2016</p>
-              <p>5 hours ago</p>
-            </div>
-            <div class="harry">
-              <img class="harry-img" src="icons/harry.jpg">
-              <p>Harry Dunne commented on the post Facebook's Changes for 2016</p>
-              <p> 5 hours ago</p>
-            </div>
-            <div class="joe">
-              <img class="joe-img" src="icons/joe.jpeg">
-              <p>Joe Mentalino posted YourApp's SEO Tips</p>
-              <p>1 day ago</p>
-            </div>
-        </div>
+          <div class="recent-activity">
+            <p>RECENT ACTIVITY</p>
+              <div class="mary2">
+                <img class="mary-img" src="icons/mary.png">
+                <p>Mary Swanson commented on YourApp's SEO Tips</p>
+                <p>4 hours ago</p>
+              </div>
+              <div class="lloyd2">
+                <img class="lloyd-img" src="icons/lloyd.jpg">
+                <p>Lloyd Christmas liked the post Facebook's Changes for 2016</p>
+                <p>5 hours ago</p>
+              </div>
+              <div class="harry2">
+                <img class="harry-img" src="icons/harry.jpg">
+                <p>Harry Dunne commented on the post Facebook's Changes for 2016</p>
+                <p> 5 hours ago</p>
+              </div>
+              <div class="joe2">
+                <img class="joe-img" src="icons/joe.jpeg">
+                <p>Joe Mentalino posted YourApp's SEO Tips</p>
+                <p>1 day ago</p>
+              </div>
+          </div>
 
-        <div class="message-user">
-          <p>MESSAGE USER</p>
-          <textarea class="search-user" placeholder="Search for User"></textarea><br>
-          <textarea class="message" placeholder="Message for User"></textarea><br>
-          <button class="send-btn">Send</button>
-        </div>
+          <div class="message-user">
+            <p>MESSAGE USER</p>
+            <textarea class="search-user" placeholder="Search for User"></textarea><br>
+            <textarea class="message" placeholder="Message for User"></textarea><br>
+            <button class="send-btn">Send</button>
+          </div>
 
-        <div class="settings">
-          <p>SETTINGS</p>
-          <div>
-            <p>Send Email Notifications</p>
-            <div class="toggle">
-              <input type="checkbox" name="toggle" class="toggle-checkbox" id="mytoggle" checked>
-              <label class="toggle-label" for="mytoggle">
-                <span class="toggle-inner"></span>
-                <span class="toggle-switch"></span>
+          <div class="settings">
+            <p>SETTINGS</p>
+            <div>
+              <p>Send Email Notifications</p>
+              <div class="toggle">
+                <input type="checkbox" name="toggle" class="toggle-checkbox" id="mytoggle" checked>
+                <label class="toggle-label" for="mytoggle">
+                  <span class="toggle-inner"></span>
+                  <span class="toggle-switch"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+            <p>Set Profile to Public</p>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
               </label>
             </div>
+            </div>
+            <div>
+              <p>Select Timezone:</p>
+              <select class="timezone" name="timezone">
+                <option value="CST">CST</option>
+                <option value="EST">EST</option>
+                <option value="PST">PST</option>
+              </select><br>
+            </div>
+            <button class="save-btn">Save</button>
+            <button class="cancel-btn">Cancel</button>
           </div>
-          <div>
-          <p>Set Profile to Public</p>
-          <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-            <label class="onoffswitch-label" for="myonoffswitch">
-              <span class="onoffswitch-inner"></span>
-              <span class="onoffswitch-switch"></span>
-            </label>
-          </div>
-          </div>
-          <div>
-            <p>Select Timezone:</p>
-            <select class="timezone" name="timezone">
-              <option value="CST">CST</option>
-              <option value="EST">EST</option>
-              <option value="PST">PST</option>
-            </select><br>
-          </div>
-          <button class="save-btn">Save</button>
-          <button class="cancel-btn">Cancel</button>
         </div>
-      </div>
     </main>
 
 

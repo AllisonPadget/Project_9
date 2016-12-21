@@ -27,7 +27,10 @@ var webTraffic = new Chart(webTraffic, {
     options: {
         legend: { 
             display:false //hide legend
-        }
+        },
+        maintainAspectRatio: false
+
     }
 });
+
 

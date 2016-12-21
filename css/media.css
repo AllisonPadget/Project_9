@@ -9,6 +9,10 @@
 
 @media only screen and (min-width: 768px) {
 
+	.name {
+		padding: 0 25px;
+	}
+
 	.twitter, .facebook, .google {
 		width: 32%;
 	}
@@ -42,6 +46,10 @@
 
 @media only screen and (min-width: 1024px) {
 	
+	.name {
+		padding: 0 25px;
+	}
+
 
 	.twitter, .facebook, .google {
 		width: 25%;
@@ -51,6 +59,11 @@
 	.new-members, .recent-activity, .message-user, .settings {
 		width: 49%;
 	}
+
+	.daily-traffic, .mobile-users {
+		width: 48%;
+	}
+
 
 	.message {
 		width: 400px;

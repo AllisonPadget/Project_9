@@ -1,5 +1,5 @@
 /** BORDER **/ 
-.traffic, .daily-traffic, .mobile-users, .social-stats, 
+.web-traffic, .daily-traffic, .mobile-users, .social-stats, 
 .new-members, .recent-activity, .message-user, .settings {     
 	border-style: solid;
 	border-width: 1px;   
@@ -16,7 +16,7 @@ body {
 }
 
 main {
-	padding-left: 50px;
+	padding-left: 80px;
 }
 
 /** HEADER **/
@@ -30,13 +30,28 @@ header {
 
 .flex-header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
+	height: 70px;
 }
+
+.head-wrap {
+	display: inline-flex;
+}
+
+.header {
+	
+}
+
+.bell, .profile {
+	padding: 4px 0px;
+}
+
 
 
 .bell {
 	height: 30px;
 	width: 30px;
+	align-self: center;
 }
 
 
@@ -48,7 +63,10 @@ header {
 
 .name {
 	font-weight: 300;
+	padding: 0px 4px;
 }
+
+
 
 /** LEFT SIDE NAVIGATION **/
 
@@ -59,11 +77,11 @@ header {
 	flex-direction: column;
 
 	list-style: none;
-	width: 50px;
+	width: 75px;
 	margin: 0;
 
 	position: absolute;
-	top: 50px;
+	top: 70px;
 	left: 0;
 	height: 100%;
 
@@ -73,7 +91,7 @@ ul {
 	padding: 0;
 }
 li {
-	padding: 5px;
+	padding-left: 17px;
 	padding-top: 50px;
 }
 
@@ -89,7 +107,8 @@ li {
     background-color: #7477BF;
     color: white;
     margin-bottom: 15px;
-    width: 95%;
+    margin-left: 10px;
+    width: 90%;
 }
 
 /* The close button */
@@ -112,23 +131,43 @@ li {
 
 /** WIDGETS **/
 
+.wrapper {
+	overflow: hidden;
+	width: 100%;
+}
+
 .web-traffic {
 	display: block;
 	padding: 10px;
 	margin: 0;
 }
 
+#web-traffic {
+	max-height: 300px;
+}
+
+
+
+
 .daily-traffic {
-	display: inline-block;
+	/*display: inline-block;*/
 
 	padding: 10px;
+}
+
+#daily-traffic {
+	max-height: 300px;
 }
 
 .mobile-users {
-	display: inline-block;
+	/*display: inline-block;*/
+
 	padding: 10px;
 }
 
+#mobile-users {
+	max-height: 300px;
+}
 
 
 /** SOCIAL STATS **/
@@ -157,7 +196,8 @@ li {
 /** NEW MEMBERS **/
 
 .new-members {
-	display: inline-block;
+	/*display: inline-block;*/
+	float: left;
 
 }
 
@@ -171,7 +211,16 @@ li {
 /** RECENT ACTIVITY **/
 
 .recent-activity {
-	display: inline-block;
+	/*display: inline-block;*/
+	float: right;
+}
+
+.mary2 p,
+.lloyd2 p,
+.harry2 p,
+.joe2 p {
+	padding-left: 75px;
+	
 }
 
 /** MESSAGE USER **/
